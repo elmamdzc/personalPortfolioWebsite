@@ -1,0 +1,222 @@
+@import url("//fonts.googleapis.com/css?family=Zeyada");
+
+*{
+    margin:0;
+    padding:0
+}
+
+body
+{
+    background: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    overflow-x: hidden;
+}
+
+
+#navbar
+{
+    width: 100%;
+    height: 20vh;
+    background: cornflowerblue;
+    border-bottom: 5px solid rgb(35, 85, 177);
+    box-sizing: border-box;
+}
+
+#navbar ul
+{
+    list-style: none;
+    display:flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-flow: wrap;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+#navbar ul li
+{
+    box-sizing: border-box;
+    padding: 100% 20px 100% 20px;
+
+}
+
+#navbar ul a 
+{
+    text-decoration: none;
+    color:white
+}
+
+#navbar ul li:hover
+{
+    background: rgb(35, 85, 177);
+    cursor: pointer;  
+}
+
+#welcome-section
+{
+    position: relative;
+    text-align: center;
+    height: 80vh;
+    background: rgb(61, 57, 57);
+    font-family: 'Zeyada';
+    color: cornflowerblue;
+    border-bottom: 2px solid rgb(35, 85, 177);
+}
+
+#welcome-section h1
+{
+    font-size: 8vw;
+}
+
+#welcome-section h3
+{
+    font-size: 4vw;
+}
+
+#title
+{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#projects
+{
+    width: 100%;
+    text-align: center;
+}
+
+#projects h2
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-tile
+{
+    width: 30vw;
+    margin: 40px;
+    padding:20px;
+    background: gray;
+    border-radius: 10px;
+}
+
+.project-tile img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.project-tile:hover
+{
+background-color: cornflowerblue;
+}
+
+.project-tile img:hover
+{
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#project_tiles
+{
+    background: rgb(58, 57, 57);
+    display: flex;
+    flex-flow: wrap;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_link
+{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    color:white
+}
+
+.text_link:hover
+{
+    background: cornflowerblue;
+    border-radius: 5px;
+}
+
+#contact
+{
+    text-align: center;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#contact ul
+{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+#contact a
+{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color:white
+}
+
+#contact a:hover
+{
+    background-color: rgb(35, 85, 177);
+    border-radius: 15px;
+}
+
+#contact h2
+{
+    font-family: Zeyada;
+    font-size: 65px;
+    margin-top: 20px;
+}
+
+#contact h5
+{
+    font-family: Zeyada;
+    font-size: 35px;
+}
+
+#bottom
+{
+    border-top:5px solid rgb(35, 85, 177);
+    padding: 20px;
+}
+
+#bottom p
+{
+    padding: 5px;
+}
+
+@media screen and (max-width: 870px)
+{
+    #project_tiles
+    {
+        flex-direction: row;
+    }   
+
+    .project-tile
+    {
+        width: 50vw;
+        margin: 20px
+    }
+}
